@@ -2,13 +2,31 @@
 
 **aiChat** is a basic AI Chat bot based out of open ai api and is written in Next js 13. 
 
-To run this project in your local system, clone the repo to any folder
+To run this project in your local system, clone the repo to any folder and follow these 2 steps
+
+### 1. Add keys to .env file
+
+This Project needs few sensitive data for OAuth login.  
+
+First go to [https://console.cloud.google.com/](https://console.cloud.google.com/) and follow this tutorial ([Next.js 13 Google Login (NextAuth V4 / TypeScript Tutorial) - YouTube](https://www.youtube.com/watch?v=6lCXM11Tgyg&t=1s)) to create **OAuth consent screen Credentials** to get Client ID and Client Secret. 
+
+Then, create a file named *.env.local* in your project root folder.
+
+Store your credentials in the env file as shown below.
+
+```bash
+GOOGLE_OAUTH_CLIENT_ID=googleclientidgenerated
+GOOGLE_OAUTH_CLIENT_SECRET=googleclientsceretgenerated
+NEXT_PUBLIC_SECRET=anyrandomsecretstringyourwish
+```
+
+### 2. install dependencies and run
 
 enter  “**pnpm install**” to install all the dependencies listed in package.json
 
 enter “**pnpm run dev**” to run the project in local system at 3000 port.
 
-**NOTE : Don’t use npm or yarn to install packages**
+**NOTE : Try not to use use *npm* or *yarn* to install / run packages**
 
 After running the above command, you can see the website running at **[http://localhost:3000/](http://localhost:3000/)**
 
