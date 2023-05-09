@@ -3,25 +3,91 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-first: 255, 255, 255;
+  --text-first: 127, 129, 128;
+  --text-second: 106, 108, 117;
+  --dark-blue-color: 17, 60, 118;
+  --sky-blue-color: 114, 189, 226;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-first: 0, 0, 0;
+    --text-first: 255, 255, 255;
+    --text-second: 255, 255, 255;
+    --dark-blue-color: 17, 60, 118;
+    --sky-blue-color: 114, 189, 226;
   }
 }
 
+
+/* colors */
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: rgb(var(--background-first));
+  color: rgb(var(--text-first));
+  @apply px-[60px] py-[30px];
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    @apply px-[20px] py-[5px];
+  }
+}
+
+.tc-white-color {
+  /* color : rgb(var(--background-first)); */
+  color: white;
+}
+
+.tc-light-grey-color {
+  color: rgb(var(--text-first));
+}
+
+.tc-dark-grey-color {
+  color: rgb(var(--text-second));
+}
+
+.tc-dark-blue-color {
+  color: rgb(var(--dark-blue-color));
+}
+
+.tc-sky-blue-color {
+  color: rgb(var(--sky-blue-color));
+}
+
+.bc-white-color {
+  background-color: rgb(var(--background-first));
+}
+
+.bc-light-grey-color {
+  background-color: rgb(var(--text-first));
+}
+
+.bc-dark-grey-color {
+  background-color: rgb(var(--text-second));
+}
+
+.bc-dark-blue-color {
+  background-color: rgb(var(--dark-blue-color));
+}
+
+.bc-sky-blue-color {
+  background-color: rgb(var(--sky-blue-color));
+}
+
+.bc-light-blue-color{
+  background-color: #bfcbfc;
+}
+
+.bc-light-sky-blue-color {
+  background-color: #cbeffa;
+}
+
+.chat-by-ai {
+  @apply bc-light-sky-blue-color w-fit max-w-[70%] px-2 py-2 text-[12px] sm:text-sm   rounded-lg my-5 mr-auto;
+}
+
+.chat-by-user {
+  @apply bc-light-sky-blue-color w-fit max-w-[70%] px-2 py-2 text-[12px] sm:text-sm rounded-lg my-5 ml-auto;
 }
