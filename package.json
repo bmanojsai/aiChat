@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "install": "echo Try using pnpm next time && rm -rf node_modules && pnpm install && echo Don't worry!, packages got installed anyway!"
+    "install": "echo Try using pnpm !",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@types/node": "20.1.0",

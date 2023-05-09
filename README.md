@@ -8,6 +8,8 @@ enter  “**pnpm install**” to install all the dependencies listed in package.
 
 enter “**pnpm run dev**” to run the project in local system at 3000 port.
 
+**NOTE : Don’t use npm or yarn to install packages**
+
 After running the above command, you can see the website running at **[http://localhost:3000/](http://localhost:3000/)**
 
 ## Code Details
