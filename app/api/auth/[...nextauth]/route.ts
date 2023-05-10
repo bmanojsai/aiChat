@@ -3,6 +3,7 @@ import GoogleProvider from "next-auth/providers/google";
 import { NextApiRequest, NextApiResponse } from "next";
 import { NextAuthOptions } from "next-auth";
 
+
 const options : NextAuthOptions = {
   providers : [
     GoogleProvider({
@@ -13,7 +14,7 @@ const options : NextAuthOptions = {
   secret: process.env.NEXT_PUBLIC_SECRET!,
 }
 
-const handler = (req :NextApiRequest , res : NextApiResponse) => NextAuth(req,res,options);
+const handler = (req : any, res : any) => NextAuth(req,res,options);
 
 export { handler as GET, handler as POST };
 // export default handler;
