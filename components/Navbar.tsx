@@ -39,7 +39,7 @@ const Navbar: React.FC = (): JSX.Element => {
 
       <button
         className="bg-white border-slate-100 border-2 p-1 m-1 text-[12px] text-left underline underline-offset-1"
-        onClick={() => () => setModalState(true)}
+        onClick={() => setModalState(true)}
       >
         Update API key
       </button>
