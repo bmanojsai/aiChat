@@ -44,11 +44,6 @@ dependencies:
     specifier: 5.0.4
     version: 5.0.4
 
-devDependencies:
-  '@types/crypto-js':
-    specifier: ^4.1.1
-    version: 4.1.1
-
 packages:
 
   /@alloc/quick-lru@5.2.0:
@@ -291,10 +286,6 @@ packages:
     dependencies:
       tslib: 2.5.0
     dev: false
-
-  /@types/crypto-js@4.1.1:
-    resolution: {integrity: sha512-BG7fQKZ689HIoc5h+6D2Dgq1fABRa0RbBWKBd9SP/MVRVXROflpm5fhwyATX5duFmbStzyzyycPB8qUYKDH3NA==}
-    dev: true
 
   /@types/json5@0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
