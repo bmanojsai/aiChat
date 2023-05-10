@@ -6,6 +6,7 @@ import { DefaultSession } from "next-auth";
 import { useState } from "react";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+
 import ApiKeyModal from "./ApiKeyModal";
 
 const Navbar: React.FC = (): JSX.Element => {
@@ -90,6 +91,7 @@ const Navbar: React.FC = (): JSX.Element => {
       />
     </>
   );
+
   return (
     <>
       <nav className="flex justify-between items-center py-5 ">

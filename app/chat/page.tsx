@@ -1,9 +1,12 @@
 "use client";
+
 import { useState, useEffect, useRef } from "react";
-import ApiKeyModal from "../ApiKeyModal";
+import { useSession, signIn } from "next-auth/react";
+
+import ApiKeyModal from "../../components/ApiKeyModal";
+
 import { getApiKeyFromLocalStorage } from "@/helpers/localStorage";
 import askQuestionToOpenAI from "@/helpers/apiCalls";
-import { useSession, signIn } from "next-auth/react";
 import { AddAnswer, AddQuestion, convertToArray } from "@/helpers/chatManage";
 
 export default function Chat() {
@@ -62,7 +65,7 @@ export default function Chat() {
     setChatHistory(updatedChatAfterAnswer);
   };
 
-  const chatPrenst = convertToArray(chatHistory)?.map(
+  const chatPresent = convertToArray(chatHistory)?.map(
     (text: string, index: number) => {
       if (text.startsWith("A.")) {
         return (
@@ -99,7 +102,7 @@ export default function Chat() {
       </div>
 
       <div className="bg-white flex-1 px-4 py-2 overflow-scroll">
-        {chatPrenst}
+        {chatPresent}
         <div ref={scrollToEndRef}></div>
       </div>
 

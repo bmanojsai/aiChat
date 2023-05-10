@@ -1,8 +1,8 @@
-import Navbar from "./Navbar";
-import ProvidersWrapper from "./ProvidersWrapper";
+import Navbar from "../components/Navbar";
+import ProvidersWrapper from "../components/ProvidersWrapper";
 
-import "./globals.css";
 import { Inter } from "next/font/google";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
