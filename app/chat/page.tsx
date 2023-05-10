@@ -91,7 +91,7 @@ export default function Chat() {
           Model: text-davinci-003
         </p>
         <p className="bg-white px-2 py-1 my-1 mx-1 rounded-md text-[12px]">
-          Max Token: 10
+          Max Token: 50
         </p>
         <p className="bg-white px-2 py-1 my-1 mx-1 rounded-md text-[12px]">
           Temperature: 1

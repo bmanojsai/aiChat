@@ -16,7 +16,7 @@ export default async function askQuestionToOpenAI(question: string) : Promise<Cr
     const response = await openai.createCompletion({
       model: "text-davinci-003",
       prompt: question,
-      max_tokens: 30,
+      max_tokens: 50,
       temperature: 1,
     });
 
