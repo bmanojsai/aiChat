@@ -10,7 +10,7 @@
   --sky-blue-color: 114, 189, 226;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background-first: 0, 0, 0;
     --text-first: 255, 255, 255;
@@ -18,7 +18,7 @@
     --dark-blue-color: 17, 60, 118;
     --sky-blue-color: 114, 189, 226;
   }
-}
+} */
 
 
 /* colors */
